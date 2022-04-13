@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  get-stationid-list-by-name-list:
+    lang: java11
+    handler: ./get-stationid-list-by-name-list
+    image: tmsquare/get-stationid-list-by-name-list:latest
+

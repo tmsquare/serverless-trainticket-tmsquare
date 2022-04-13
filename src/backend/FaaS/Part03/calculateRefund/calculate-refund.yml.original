@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  calculate-refund:
+    lang: java11
+    handler: ./calculate-refund
+    image: tmsquare/calculate-refund:latest
+

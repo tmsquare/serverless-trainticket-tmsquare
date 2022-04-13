@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  init-contacts-mongo:
+    lang: java11
+    handler: ./init-contacts-mongo
+    image: tmsquare/init-contacts-mongo:latest
+

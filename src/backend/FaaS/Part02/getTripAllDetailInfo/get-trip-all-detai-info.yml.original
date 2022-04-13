@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  get-trip-all-detai-info:
+    lang: java11
+    handler: ./get-trip-all-detai-info
+    image: tmsquare/get-trip-all-detai-info:latest
+

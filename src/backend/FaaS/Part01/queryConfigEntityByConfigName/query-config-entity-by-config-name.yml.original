@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  query-config-entity-by-config-name:
+    lang: java11
+    handler: ./query-config-entity-by-config-name
+    image: tmsquare/query-config-entity-by-config-name:latest
+

@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  get-route-by-routeid:
+    lang: java11
+    handler: ./get-route-by-routeid
+    image: tmsquare/get-route-by-routeid:latest
+

@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  get-price-by-routeid-and-traintype:
+    lang: java11
+    handler: ./get-price-by-routeid-and-traintype
+    image: tmsquare/get-price-by-routeid-and-traintype:latest
+

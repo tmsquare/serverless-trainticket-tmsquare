@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  init-config-mongo:
+    lang: java11
+    handler: ./init-config-mongo
+    image: tmsquare/init-config-mongo:latest
+

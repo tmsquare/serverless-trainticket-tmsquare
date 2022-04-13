@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  pay-for-the-order:
+    lang: java11
+    handler: ./pay-for-the-order
+    image: tmsquare/pay-for-the-order:latest
+

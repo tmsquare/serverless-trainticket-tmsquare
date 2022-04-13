@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  find-contacts-by-accountid:
+    lang: java11
+    handler: ./find-contacts-by-accountid
+    image: tmsquare/find-contacts-by-accountid:latest
+

@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  get-traintype-by-traintypeid:
+    lang: java11
+    handler: ./get-traintype-by-traintypeid
+    image: tmsquare/get-traintype-by-traintypeid:latest
+

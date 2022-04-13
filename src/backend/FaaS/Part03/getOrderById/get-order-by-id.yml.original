@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.195.190.110:8080
+functions:
+  get-order-by-id:
+    lang: java11
+    handler: ./get-order-by-id
+    image: tmsquare/get-order-by-id:latest
+
