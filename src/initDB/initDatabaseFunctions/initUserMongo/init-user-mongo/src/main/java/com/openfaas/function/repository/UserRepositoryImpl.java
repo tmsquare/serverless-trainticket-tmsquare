@@ -12,7 +12,7 @@ import org.bson.Document;
 import java.util.UUID;
 
 public class UserRepositoryImpl implements UserRepository {
-    MongoClient mongoClient = MongoClients.create("mongodb://ts-serverless-user-mongo.default.default:27017");
+    MongoClient mongoClient = MongoClients.create("mongodb://ts-serverless-user-mongo.default:27017");
     private MongoDatabase database = mongoClient.getDatabase("ts");
     private MongoCollection<Document> collection = database.getCollection("user");
 
