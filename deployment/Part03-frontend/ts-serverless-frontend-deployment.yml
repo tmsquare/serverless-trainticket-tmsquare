@@ -33,7 +33,7 @@ kind: Service
 metadata:
   name: ts-serverless-ui-dashboard
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - name: http
       port: 8080

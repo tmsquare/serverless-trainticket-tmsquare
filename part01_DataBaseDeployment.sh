@@ -1,7 +1,7 @@
 echo "Part01 DataBase Deployment"
 
-MASTER_ID=
-DOCKER_USERNAME=
+MASTER_ID=34.79.152.252
+DOCKER_USERNAME=tmsquare
 
 
 cd deployment/Part01-database/

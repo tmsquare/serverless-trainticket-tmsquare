@@ -1,6 +1,6 @@
 echo "Part01 DataBase Deployment"
 
-MASTER_ID=35.195.190.110
+MASTER_ID=35.240.48.218
 DOCKER_USERNAME=
 
 cd ..
