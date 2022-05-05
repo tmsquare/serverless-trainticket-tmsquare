@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.49.2 (be patient)
+
+
+Server Software:        
+Server Hostname:        192.168.49.2
+Server Port:            31112
+
+Document Path:          /function/get-user-by-userid.openfaas-fn/accountId/4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f
+Document Length:        241 bytes
+
+Concurrency Level:      1
+Time taken for tests:   53.856 seconds
+Complete requests:      2000
+Failed requests:        0
+Total transferred:      946000 bytes
+HTML transferred:       482000 bytes
+Requests per second:    37.14 [#/sec] (mean)
+Time per request:       26.928 [ms] (mean)
+Time per request:       26.928 [ms] (mean, across all concurrent requests)
+Transfer rate:          17.15 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   5.2      0     121
+Processing:     8   26  39.9     15    1437
+Waiting:        8   26  39.8     14    1436
+Total:          8   27  40.3     15    1437
+
+Percentage of the requests served within a certain time (ms)
+  50%     15
+  66%     17
+  75%     20
+  80%     53
+  90%     57
+  95%     65
+  98%     97
+  99%    143
+ 100%   1437 (longest request)

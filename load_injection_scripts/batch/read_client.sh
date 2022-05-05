@@ -12,7 +12,7 @@ rm -f ${clientID}.dat
 host=$1
 #ncalls=$2
 
-echo "n_calls runtime(s) latency(ms) throughput(ms)" >> ${clientID}.dat
+echo "n_calls runtime(s) latency(ms) throughput(ops/s)" >> ${clientID}.dat
 
 for ncalls in 100 500 1000 2000 5000 10000 20000
 do

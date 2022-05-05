@@ -1,18 +1,16 @@
 echo "Part01 DataBase Deployment"
 
-MASTER_ID=34.79.152.252
+MASTER_ID=192.168.49.2
 DOCKER_USERNAME=tmsquare
-
 
 cd deployment/Part01-database/
 kubectl apply -f storage-class.yml -n openfaas
-sleep 2
+
 kubectl apply -f ts-serverless-persistent-deployment.yml
-sleep 2
+
 kubectl apply -f ts-serverless-database-deployment.yml
 cd ..
 cd ..
-
 cd src/initDB/initDatabaseFunctions/
 
 cd initAuthMongo/

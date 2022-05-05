@@ -3,7 +3,7 @@ echo "Part02 FaaS Backend Deployment"
 cd src/backend/FaaS/
 cd Part01/
 
-MASTER_ID=34.79.152.252
+MASTER_ID=192.168.49.2
 DOCKER_USERNAME=tmsquare
 
 echo "Part1 function deployment start"

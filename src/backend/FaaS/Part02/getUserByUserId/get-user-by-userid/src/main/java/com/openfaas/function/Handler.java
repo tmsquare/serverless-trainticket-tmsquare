@@ -15,7 +15,13 @@ public class Handler extends com.openfaas.model.AbstractHandler  {
 
     public IResponse Handle(IRequest req) {
         String accountId = req.getPath().get("accountId");
+
+        //long start = System.currentTimeMillis();
         mResponse mRes = userService.findByUserId(accountId);
+        //mResponse mRes = new mResponse();
+        //long end = System.currentTimeMillis();
+        //long elapsedTime = end - start;
+        //System.out.println("Elapsed time: " + elapsedTime/1000.0);
 
         Response res = new Response();
         res.setBody(JsonUtils.object2Json(mRes));

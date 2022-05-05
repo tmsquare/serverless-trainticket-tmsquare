@@ -12,9 +12,10 @@ rm -f ${clientID}.dat
 host=$1
 #ncalls=$2
 
-echo "n_calls runtime(s) latency(ms) throughput(ms)" >> ${clientID}.dat
+echo "n_calls runtime(s) latency(ms) throughput(ops/s)" >> ${clientID}.dat
 
-for ncalls in 100 500 1000 2000 5000 10000 20000
+#for ncalls in 100 500 1000 2000 5000 10000 20000
+for ncalls in 2000
 do
   runtime=0
   runtime=$({ time ${DIR}/write_request.sh ${host} ${ncalls}; } 2>&1 |grep real | sed -E 's/[^0-9\.]+//g' | tr -d '\n')

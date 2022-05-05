@@ -4,7 +4,7 @@ cd ..
 cd src/backend/FaaS/
 cd Part01/
 
-MASTER_ID=35.240.48.218
+MASTER_ID=34.79.152.252
 DOCKER_USERNAME=tmsquare
 
 echo "Part1 function deployment start"

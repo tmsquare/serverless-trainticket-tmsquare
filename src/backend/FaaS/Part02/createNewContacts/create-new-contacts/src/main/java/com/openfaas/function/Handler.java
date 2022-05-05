@@ -25,6 +25,7 @@ public class Handler extends com.openfaas.model.AbstractHandler  {
         try {
             Contacts aci = JsonUtils.json2Object(req.getBody(), Contacts.class);
             mResponse mRes = contactsService.create(aci);
+
             res.setBody(JsonUtils.object2Json(mRes));
         } catch (Exception e) {
             e.printStackTrace();

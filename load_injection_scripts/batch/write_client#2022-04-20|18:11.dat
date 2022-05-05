@@ -1,10 +1,10 @@
 # request: curl  -L http://$1:8080/function/create-new-contacts/ -d {\"id\": \"4d2a46c7-71cb-4cf1-b5bb-b68406d9da67\", \"accountId\": \"9e0b2927-67fa-4bd1-8198-cdad5c762289\", \"name\": \"Contacts_One\", \"documentType\": \"1\", \"documentNumber\": \"DocumentNumber_One\", \"phoneNumber\": \"ContactsPhoneNum_One\"}"
 
-n_calls runtime(s) latency(ms) throughput(ms)
-100 03.679 36.79000 27.18129
-500 021.338 42.67000 23.43566
-1000 047.723 47.72000 20.95557
-2000 129.103 64.55000 15.49186
-5000 129.871 25.97000 38.50596
-10000 539.749 53.97000 18.52881
-20000 2242.791 112.13000 8.91821
+n_calls runtime(s) latency(ms) throughput(ops/s)
+100 05.734 57.34000 17.43983
+500 020.740 41.48000 24.10800
+1000 14.488 14.48000 69.06077
+2000 153.362 76.68000 13.04121
+5000 142.019 28.40000 35.21126
+10000 618.919 61.89000 16.15769
+20000 2626.572 131.32000 7.61498
