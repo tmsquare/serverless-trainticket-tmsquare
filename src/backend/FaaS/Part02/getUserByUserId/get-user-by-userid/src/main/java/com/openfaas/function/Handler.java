@@ -17,8 +17,8 @@ public class Handler extends com.openfaas.model.AbstractHandler  {
         String accountId = req.getPath().get("accountId");
 
         //long start = System.currentTimeMillis();
-        mResponse mRes = userService.findByUserId(accountId);
-        //mResponse mRes = new mResponse();
+        //mResponse mRes = userService.findByUserId(accountId);
+        mResponse mRes = new mResponse();
         //long end = System.currentTimeMillis();
         //long elapsedTime = end - start;
         //System.out.println("Elapsed time: " + elapsedTime/1000.0);
